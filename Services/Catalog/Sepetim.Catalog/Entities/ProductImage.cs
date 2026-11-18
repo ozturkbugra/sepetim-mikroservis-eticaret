@@ -1,8 +1,8 @@
 ﻿namespace Sepetim.Catalog.Entities
 {
-    public class ProductImages
+    public class ProductImage
     {
-        public int ProductImagesID { get; set; }
+        public int ProductImageID { get; set; }
 
         public string Image1 { get; set; }
         public string Image2 { get; set; }
