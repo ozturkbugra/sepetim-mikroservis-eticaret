@@ -36,10 +36,10 @@ namespace Sepetim.Catalog.Services.ProductImageServices
             return _mapper.Map<List<ResultProductImageDto>>(values);
         }
 
-        public Task<ResultProductImageDto> GetProductImageByIdAsync(string id)
+        public async Task<ResultProductImageDto> GetProductImageByIdAsync(string id)
         {
-            var value = _ProductImageCollection.Find(x => x.ProductImageID == id).FirstOrDefaultAsync();
-            return _mapper.Map<Task<ResultProductImageDto>>(value);
+            var value = await _ProductImageCollection.Find(x => x.ProductImageID == id).FirstOrDefaultAsync();
+            return _mapper.Map<ResultProductImageDto>(value);
         }
 
         public Task UpdateProductImageAsync(UpdateProductImageDto updateProductImageDto)

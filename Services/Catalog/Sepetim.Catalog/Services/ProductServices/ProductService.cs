@@ -37,10 +37,10 @@ namespace Sepetim.Catalog.Services.ProductServices
             return _mapper.Map<List<ResultProductDto>>(values);
         }
 
-        public Task<ResultProductDto> GetProductByIdAsync(string id)
+        public async Task<ResultProductDto> GetProductByIdAsync(string id)
         {
-            var value = _productCollection.Find(x => x.ProductID == id).FirstOrDefaultAsync();
-            return _mapper.Map<Task<ResultProductDto>>(value);
+            var value = await _productCollection.Find(x => x.ProductID == id).FirstOrDefaultAsync();
+            return _mapper.Map<ResultProductDto>(value);
         }
 
         public Task UpdateProductAsync(UpdateProductDto updateProductDto)
