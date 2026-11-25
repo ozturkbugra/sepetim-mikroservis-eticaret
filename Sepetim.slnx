@@ -3,4 +3,7 @@
   <Folder Name="/Services/Catalog/">
     <Project Path="Services/Catalog/Sepetim.Catalog/Sepetim.Catalog.csproj" />
   </Folder>
+  <Folder Name="/Services/Discount/">
+    <Project Path="Services/Discount/Sepetim.Discount/Sepetim.Discount.csproj" Id="f7743692-f174-4b15-b955-0266fe25f1c9" />
+  </Folder>
 </Solution>
