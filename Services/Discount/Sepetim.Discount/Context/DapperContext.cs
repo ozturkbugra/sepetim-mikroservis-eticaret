@@ -18,7 +18,10 @@ namespace Sepetim.Discount.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=Bugra;Database=SepetimDiscountDB;User Id=bugra;Password=123;TrustServerCertificate=True;");
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer(_connectionString);
+            }
         }
 
         public DbSet<Coupon> Coupons { get; set; }
