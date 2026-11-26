@@ -6,4 +6,15 @@
   <Folder Name="/Services/Discount/">
     <Project Path="Services/Discount/Sepetim.Discount/Sepetim.Discount.csproj" Id="f7743692-f174-4b15-b955-0266fe25f1c9" />
   </Folder>
+  <Folder Name="/Services/Order/" />
+  <Folder Name="/Services/Order/Core/">
+    <Project Path="Services/Order/Core/Sepetim.Order.Application/Sepetim.Order.Application.csproj" Id="87eccbe3-9728-45f7-b18c-a50201fbe46e" />
+    <Project Path="Services/Order/Core/Sepetim.Order.Domain/Sepetim.Order.Domain.csproj" Id="aa264a36-e6f1-4382-affb-03b7626fe654" />
+  </Folder>
+  <Folder Name="/Services/Order/Infrastructure/">
+    <Project Path="Services/Order/Infrastructure/Sepetim.Order.Persistence/Sepetim.Order.Persistence.csproj" Id="5f0dfc77-459d-415e-8007-00a9aa0cd4e9" />
+  </Folder>
+  <Folder Name="/Services/Order/Presentation/">
+    <Project Path="Services/Order/Presentation/Sepetim.Order.WebApi/Sepetim.Order.WebApi.csproj" Id="0ad19c76-c3f3-4b52-adf6-fc573dc6267e" />
+  </Folder>
 </Solution>
