@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\..\Core\Sepetim.Order.Application\Sepetim.Order.Application.csproj" />
+    <ProjectReference Include="..\..\Core\Sepetim.Order.Domain\Sepetim.Order.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Sepetim.Order.Persistence\Sepetim.Order.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
