@@ -1,8 +1,13 @@
 using Sepetim.Order.Application.Features.CQRS.Handlers.AddressHandlers;
 using Sepetim.Order.Application.Features.CQRS.Handlers.OrderDetailHandlers;
+using Sepetim.Order.Application.Interfaces;
+using Sepetim.Order.Application.Services;
+using Sepetim.Order.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddApplicationServices();
 
 builder.Services.AddScoped<GetAddressByIdQueryHandler>();
 builder.Services.AddScoped<GetAddressQueryHandler>();
